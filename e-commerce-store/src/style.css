@@ -1,0 +1,183 @@
+.screen {
+    margin: 2% 15%;
+    padding: 1%;
+    background-color: rgb(227, 229, 230);
+    border: solid 2px black;
+    min-width: 950px;
+    height: 85vh;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(155, 155, 155);
+    margin-top: 0%;
+    height: 7vh;
+    margin-bottom: 10px;
+
+}
+
+.header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    width: 96%;
+    float: inline-start;
+}
+
+#cart {
+    width: 3%;
+    height: 10px;
+    float: inline-end;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+
+#cart>h5,
+img {
+    text-align: center;
+    margin: 0%;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    padding: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px black solid;
+    background-color: rgb(250, 247, 243);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom {
+    width: 80%;
+    height: 22vh;
+    margin: 0% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.img {
+    width: 42%;
+    height: 42vh;
+    padding: 2%;
+    margin: 10px 0px 0px 10px;
+    padding: 0px;
+    border: solid 1px gray;
+}
+
+.content {
+    width: 53%;
+    height: 42vh;
+    padding: 0px;
+    text-align: justify;
+}
+
+.button {
+    width: 45%;
+    height: 6vh;
+    background-color: rgb(113, 207, 141);
+    color: white;
+    font-weight: bolder;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.button>p {
+    text-align: center;
+    margin: auto;
+    font-size: 10px;
+}
+
+.scroll {
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.details {
+    height: 20vh;
+}
+
+.review {
+    height: 8vh;
+}
+
+p,
+h4 {
+    margin: 0px 20px 0px 0px
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 3%;
+}
+
+.list>p,
+button {
+    width: 15%;
+    height: 30px;
+}
+
+.list>img {
+    border: solid 1px gray;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.carts {
+    width: 45%;
+    height: 6vh;
+    background-color: rgb(212, 200, 87);
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+.remove {
+    background-color: rgb(185, 79, 79);
+    cursor: pointer;
+}
+
+.buy {
+    background-color: rgb(113, 207, 141);
+    cursor: pointer;
+}
+
+.gpay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
