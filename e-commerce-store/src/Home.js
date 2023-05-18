@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Gamecard from "./Gamecard";
 import './style.css';
-import data from './data';
 import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
 
 const Home = () => {
+    const [data, setData] = useState([]);
+  const fetchData = () => {
+   axios(`http://localhost:1337/api/Games`)
+      .then(data => { setData(data.data.data); })
+  }
+
+  useEffect(() => {
+    fetchData()
+  },[]);
+
     const {
         totalUniqueItems,
     } = useCart();
@@ -20,9 +30,9 @@ const Home = () => {
             </section>
             <div className="scroll">
                 {
-                    data.gameData.map((game, index) => {
+                    data.map((game, index) => {
                         return (
-                            <Gamecard img={game.img} gamename={game.gamename} about={game.about} details={game.details} reviews={game.reviews} price={game.price} id={game.id} key={index} />
+                            <Gamecard img={game.attributes.image} gamename={game.attributes.name} about={game.attributes.about} details={game.attributes.details} reviews={game.attributes.rating} price={game.attributes.price} id={game.id} key={index} />
                         )
                     })
                 }
